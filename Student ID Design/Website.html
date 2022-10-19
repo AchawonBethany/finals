@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link href="CSS.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+
+  	<div class="container">
+      <form method="post" autocomplete="on">
+<h2 align="center">Student ID System​ Registration</h2><br>
+
+        <!--First name-->
+    	 <div class="box">
+          <label for="firstName" class="fl fontLabel"> First Name: </label><div class="new iconBox"> <i class="fa fa-user" aria-hidden="true"></i></div>
+    	  <div class="fr">
+          <input type="text" name="firstName" placeholder="First Name" class="textBox" autofocus="on" required></div>
+          <div class="clr"></div></div>
+
+        <!--Last name-->
+    	<div class="box">
+          <label for="lastName" class="fl fontLabel"> Last Name: </label>
+    	  <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div><div class="fr">
+          <input type="text" required name="lastName" placeholder="Last Name" class="textBox">
+    	  </div>
+          <div class="clr"></div></div>
+
+    	<!---ID No.------>
+    	<div class="box">
+          <label for="id" class="fl fontLabel"> Id No: </label>
+    	  <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+    	  <div class="fr">
+    	  <input type="text" required name="idNo" minlength="8" placeholder="Id No." class="textBox"></div>
+    	  <div class="clr"></div></div>
+
+    	<!---Password------>
+    	<div class="box">
+          <label for="password" class="fl fontLabel"> Password </label>
+    	  <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div> <div class="fr">
+    	  <input type="Password" required name="password" placeholder="Password" class="textBox"></div>
+    	  <div class="clr"></div></div>
+
+    	<!---Submit Button------>
+    	<div class="box">
+    	<input type="Submit" name="Submit" class="submit" value="SUBMIT">
+    	</div>
+
+      </form>
+  </div>
+  </body>
+
+</html>
