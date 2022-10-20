@@ -13,7 +13,7 @@
 
   	<div class="container">
       <form method="post" autocomplete="on">
-<h2 align="center">Student ID System​ Registration</h2><br>
+<h2 align="center">Student ID Systemâ€‹ Registration</h2><br>
 
         <!--First name-->
     	 <div class="box">
@@ -30,12 +30,31 @@
     	  </div>
           <div class="clr"></div></div>
 
+<!--Address-->
+    	<div class="box">
+          <label for="address" class="fl fontLabel"> Address: </label>
+    	  <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div><div class="fr">
+          <input type="text" required name="address" placeholder="Address" class="textBox">
+    	  </div>
+          <div class="clr"></div></div>
+
+<!---Phone No.------>
+    	<div class="box">
+          <label for="phone" class="fl fontLabel"> Phone No: </label>
+    	  <div class="fl iconBox"><i class="fa fa-key"  aria-hidden="true"></i></div>
+    	  <div class="fr">
+    	  <input type="text" required name="phone" minlength="9" placeholder="Phone No." class="textBox"></div>
+    	  <div class="clr"></div></div>
+
+
+<p>_____________________________________________</p>
+
     	<!---ID No.------>
     	<div class="box">
           <label for="id" class="fl fontLabel"> Id No: </label>
-    	  <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+    	  <div class="fl iconBox"><i class="fa fa-key"  aria-hidden="true"></i></div>
     	  <div class="fr">
-    	  <input type="text" required name="idNo" minlength="8" placeholder="Id No." class="textBox"></div>
+    	  <input type="text" required name="idNo" minlength="9" placeholder="Id No." class="textBox"></div>
     	  <div class="clr"></div></div>
 
     	<!---Password------>
@@ -44,6 +63,24 @@
     	  <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div> <div class="fr">
     	  <input type="Password" required name="password" placeholder="Password" class="textBox"></div>
     	  <div class="clr"></div></div>
+
+<p>_____________________________________________</p>
+ 
+
+
+<!---Course------>
+<div class="course">
+          <label for="course" class="fl fontLabel"> Course: </label>
+       <div>
+<select id="courseoption" name="courseoption">
+    <option value="1">Bachelor of Science in Information Technology (BSIT)</option>
+    <option value="2">Bachelor of Science in Computer Science (BSCS)</option>
+    <option value="3">Bachelor of Science in Data Analytics (BSDA)</option>
+    <option value="4">Associate in Computer Technology (ACT) </option>
+    <option value="5">Bachelor of Library and Information Science (BLIS)</option>
+</select>
+</div>
+<div class="clr"></div></div><br>
 
     	<!---Submit Button------>
     	<div class="box">
