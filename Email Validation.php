@@ -1,12 +1,13 @@
-<?php 
-if(isset($_POST['submit'])){
-$email = $_POST['email'];
-$validate = filter_var($email, FILTER_SANITIZE_EMAIL);
-if(filter_var($validate,FILTER_VALIDATE_EMAIL) === false){
-echo '<h4>Email is not valid</h4>';
+<?php
+function email_validation($str) {
+    return (!preg_match(
+"^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^", $str))
+        ? FALSE : TRUE;
 }
-else{
-echo '<h4>Email is valid</h4>';
+if(!email_validation("bethanyachawon11@gmail.com")) {
+    echo "Invalid email address.";
 }
-}
+else {
+    echo "Valid email address.";
+} 
 ?>
